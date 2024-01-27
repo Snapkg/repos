@@ -2,7 +2,7 @@
   "schema": 0.1,
   "name": "Snapkg",
   "version": 1,
-  "url": "https://raw.githubusercontent.com/elfin8er/Snapkg/development/repositories/default/index.json",
+  "url": "https://raw.githubusercontent.com/elfin8er/Snapkg/development/repositories/default/manifest.json",
   "packages": [
       {
           "schema": 0.1,
