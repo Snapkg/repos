@@ -18,4 +18,4 @@ jobs:
           git config --local user.name "GitHub Actions"
           git add .
           git commit -m "Update submodules"
-          git push
+          git push origin HEAD:${{ github.ref }}
