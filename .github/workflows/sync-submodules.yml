@@ -9,7 +9,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Checkout submodules
-        run: git submodule foreach "(git checkout master; git pull)&"
+        run: git submodule update --init --recursive
+      - name: Update submodules
+        run: git submodule update --recursive --remote
       - name: Commit and push changes
         run: |
           git config --local user.email "actions@github.com"
