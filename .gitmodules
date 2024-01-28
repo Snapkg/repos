@@ -1,6 +1,8 @@
 [submodule "default/packages/snapkg"]
 	path = default/packages/snapkg
+	branch = development
 	url = https://github.com/Snapkg/snapkg
 [submodule "js/packages/websockets"]
 	path = js/packages/websockets
+	branch = development
 	url = https://github.com/Snapkg/websockets
