@@ -1,0 +1,12 @@
+name: Submodule Sync
+on:
+  workflow_dispatch: ~
+
+jobs:
+  sync-submodules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Checkout submodules
+        run: git submodule update --init --recursive
