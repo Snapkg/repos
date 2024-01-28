@@ -15,9 +15,6 @@ jobs:
       - name: Update submodules
         run: git submodule update --recursive --remote
       - name: Commit and push changes
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add .
-          git commit -m "Update submodules"
-          git push https://Snapkg:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Sync submodules"
